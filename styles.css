@@ -1,0 +1,92 @@
+:root {
+        --purple: #6a0dad;
+        --orange: #ff8800;
+        --light-purple: #e8ddf4;
+        --bg: #f8f5fc;
+      }
+      
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: var(--bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      .converter-container {
+        background: white;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(106, 13, 173, 0.2);
+        text-align: center;
+        width: 400px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      
+      h1 {
+        font-size: 2rem;
+        color: var(--purple);
+        margin-bottom: 0.5rem;
+      }
+      
+      #date {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1.2rem;
+      }
+      
+      .converter input,
+      .converter select {
+        margin: 10px 0;
+        padding: 12px;
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: all 0.3s;
+      }
+      
+      .converter input:focus,
+      .converter select:focus {
+        border-color: var(--purple);
+        outline: none;
+      }
+      
+      .currency-select {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      #convert-btn {
+        margin-top: 1rem;
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, var(--purple), var(--orange));
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+      }
+      
+      #convert-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(106, 13, 173, 0.4);
+      }
+      
+      .result, .rate-info {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #333;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
