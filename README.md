@@ -9,4 +9,4 @@
 
 🔄 Automatic currency updates
 
-💡 Supports popular currencies such as USD, EUR, GBP, and more
+💡 Supports popular currencies such as USD, EUR, GBP, POD and more
